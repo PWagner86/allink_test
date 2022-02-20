@@ -1,0 +1,112 @@
+$gray: rgb(184, 184, 184);
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: solid black 1px;
+    padding: 2rem 0;
+
+    &__wrapper{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+
+        &--info{
+            width: 60%;
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: solid 1px $gray;
+            color: $gray;
+        }
+    }
+
+    &__title{
+        font-size: 1.75rem;
+        padding: 1rem 0;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+
+        &--underline{
+            text-decoration: underline;
+        }
+
+        &--padding{
+            padding: 1rem 0;
+        }
+
+        &--top{
+            padding-top: 1rem;
+        }
+
+        &--small{
+            display: none;
+            padding: 3rem 0;
+        }
+    }
+
+    &__facebook{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    &__copyright{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info{
+        color: $gray;
+        text-decoration: none;
+
+        &--border{
+            border-right: solid 1px $gray;
+            padding-right: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer{
+        flex-direction: column;
+
+        &__wrapper{
+            width: 90%;
+            margin: 0 auto;
+
+            &--info{
+                width: 90%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;    
+            }
+        }
+
+        &__text{
+
+            &--big{
+                display: none;
+            }
+
+            &--small{
+                display: block;
+            }
+        }
+
+        &__copyright{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__info{
+            border: none;
+        }
+    } 
+}
