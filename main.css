@@ -1,4 +1,5 @@
 .header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +36,26 @@
   font-size: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .header__titlewrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__logo {
+    width: 200px;
+    padding: 0 1rem;
+  }
+  .header__title {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .header__descriptiontitle {
+    font-size: 2rem;
+  }
+  .header__description {
+    font-size: 1.5rem;
+  }
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -43,7 +64,7 @@
 
 body {
   font-family: "Oswald", sans-serif;
-  width: 1760px;
+  width: clamp(320px, 90vw, 1760px);
   margin: 0 auto;
 }
 

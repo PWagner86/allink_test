@@ -10,7 +10,7 @@ $mainFont: 'Oswald', sans-serif;;
 
 body{
     font-family: $mainFont;
-    width: 1760px;
+    width: clamp(320px, 90vw, 1760px);
     margin: 0 auto;
 }
 

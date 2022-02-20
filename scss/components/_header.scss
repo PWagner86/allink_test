@@ -1,6 +1,7 @@
 $descriptionWith: 75%;
 
 .header{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,5 +41,33 @@ $descriptionWith: 75%;
     &__description{
         width: $descriptionWith;
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+    .header{
+
+        &__titlewrapper{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__logo{
+            width: 200px;
+            padding: 0 1rem;
+        }
+
+        &__title{
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        &__descriptiontitle{
+            font-size: 2rem;
+        }
+
+        &__description{
+            font-size: 1.5rem;
+        }
     }
 }
