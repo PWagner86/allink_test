@@ -268,6 +268,29 @@
     display: block;
   }
 }
+.brand {
+  width: 80%;
+  margin: 0 auto;
+}
+.brand__title {
+  font-size: 2.5rem;
+}
+.brand__picwrapper {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.brand__pic {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .brand__picwrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;
