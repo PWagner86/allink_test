@@ -1,3 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+.header__titlewrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.header__logo {
+  width: 350px;
+}
+.header__picwrapper {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.header__pic {
+  width: 100%;
+}
+.header__descriptiontitle {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.header__description {
+  width: 75%;
+  font-size: 2rem;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -6,6 +43,8 @@
 
 body {
   font-family: "Oswald", sans-serif;
+  width: 1760px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
