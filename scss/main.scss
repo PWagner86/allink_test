@@ -1,0 +1,27 @@
+@use './components/' as *;
+
+$mainFont: 'Oswald', sans-serif;;
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $mainFont;
+}
+
+h1, h2, h3, h4, h5{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a{
+    color: black;
+}
+
+button{
+    font-family: $mainFont;
+}
+
