@@ -157,6 +157,39 @@
     top: 85%;
   }
 }
+.work {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.work__wrapper {
+  width: 32%;
+  min-height: 50rem;
+}
+.work__pic {
+  width: 100%;
+}
+.work__title {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.work__text {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .work {
+    flex-direction: column;
+  }
+  .work__wrapper {
+    width: 100%;
+  }
+  .work__textwrapper {
+    padding: 0 1rem;
+  }
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;

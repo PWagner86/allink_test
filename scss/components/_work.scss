@@ -1,0 +1,40 @@
+.work{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    &__wrapper{
+        width: 32%;
+        min-height: 50rem;
+    }
+
+    &__pic{
+        width: 100%;
+    }
+
+    &__title{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .work{
+        flex-direction: column;
+
+        &__wrapper{
+            width: 100%;
+        }
+
+        &__textwrapper{
+            padding: 0 1rem;
+        }
+    }
+}
