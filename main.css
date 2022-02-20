@@ -56,6 +56,41 @@
     font-size: 1.5rem;
   }
 }
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+.section--reverse {
+  flex-direction: row-reverse;
+}
+.section__picwrapper, .section__textwrapper {
+  width: 50%;
+}
+.section__pic {
+  width: 100%;
+}
+.section__title {
+  font-size: 2rem;
+  padding: 0 0 1rem 3rem;
+}
+.section__text {
+  font-size: 1.5rem;
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .section {
+    flex-direction: column;
+  }
+  .section__picwrapper, .section__textwrapper {
+    width: 100%;
+  }
+  .section__title, .section__text {
+    padding: 1rem 1rem;
+  }
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;
