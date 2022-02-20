@@ -58,8 +58,6 @@
 }
 .section {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 4rem 0;
 }
 .section--reverse {
@@ -83,12 +81,80 @@
 @media screen and (max-width: 1000px) {
   .section {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .section__picwrapper, .section__textwrapper {
     width: 100%;
   }
   .section__title, .section__text {
     padding: 1rem 1rem;
+  }
+}
+.rating {
+  background-color: #ececec;
+  width: 90%;
+  padding: 3rem 8rem 0 8rem;
+  margin: 3rem auto;
+}
+.rating__text {
+  font-size: 2.75rem;
+  position: relative;
+}
+.rating__text::before, .rating__text::after {
+  color: gray;
+  position: absolute;
+}
+.rating__text::before {
+  content: "<<";
+  right: 104%;
+  bottom: 60%;
+}
+.rating__text::after {
+  content: ">>";
+  left: 104%;
+  top: 60%;
+}
+.rating__person {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.rating__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid black 1px;
+  padding: 0.5rem 0;
+}
+.rating__nums, .rating__num {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.rating__num {
+  padding: 0 0.5rem;
+}
+.rating__btn {
+  border: none;
+  background: none;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .rating {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .rating__text {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .rating__text::before {
+    left: 0;
+    bottom: 100%;
+  }
+  .rating__text::after {
+    left: 0;
+    top: 85%;
   }
 }
 *, *::before, *::after {
@@ -114,6 +180,7 @@ a {
 
 button {
   font-family: "Oswald", sans-serif;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,81 @@
+.rating{
+    background-color: rgb(236, 236, 236);
+    width: 90%;
+    padding: 3rem 8rem 0 8rem;
+    margin: 3rem auto;
+
+    &__text{
+        font-size: 2.75rem;
+        position: relative;
+
+        &::before,
+        &::after{
+            color: gray;
+            position: absolute;
+        }
+
+        &::before{
+            content: "<<";
+            right: 104%;
+            bottom: 60%;
+        }
+
+        &::after{
+            content: ">>";
+            left: 104%;
+            top: 60%;
+        }
+    }
+
+    &__person{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    &__counter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid black 1px;
+        padding: 0.5rem 0;
+    }
+
+    &__nums,
+    &__num{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    &__num{
+        padding: 0 0.5rem;
+    }
+
+    &__btn{
+        border: none;
+        background: none;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .rating{
+        width: 100%;
+        padding: 2rem 1rem;
+
+        &__text{
+            font-size: 1.5rem;
+            padding-bottom: 2rem;
+
+            &::before{
+                left: 0;
+                bottom: 100%;
+            }
+    
+            &::after{
+                left: 0;
+                top: 85%;
+            }
+        }
+    }
+}

@@ -1,7 +1,5 @@
 .section{
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 4rem 0;
 
     &--reverse{
@@ -32,6 +30,8 @@
     
     .section{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;    
 
         &__picwrapper,
         &__textwrapper{
